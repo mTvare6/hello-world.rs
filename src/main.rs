@@ -11,7 +11,7 @@ use std::marker::PhantomData;
 use french_numbers::*;
 
     /// These constants are to avoid magic strings/values.
-    const LANGUAGE_LOCALES: &[&str; 18] = &["en", "es", "bg", "de", "eo", "fr", "gr", "hi", "ie", "jp", "la", "nl", "pl", "pt", "ru", "sk", "tr", "zh"];
+    const LANGUAGE_LOCALES: &[&str; 19] = &["en", "es", "bg", "bw", "de", "eo", "fr", "gr", "hi", "ie", "jp", "la", "nl", "pl", "pt", "ru", "sk", "tr", "zh"];
     const LANGUAGES_DIRECTORY: &str = "translations";
     const MSG: &str = "msg";
 
