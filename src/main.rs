@@ -28,7 +28,6 @@ use french_numbers::*;
     const ten: i64 = 10;
     const eleven: i64 = 11;
     const twelve: i64 = 12;
-    const thirteen: i64 = 13;
     const fourteen: i64 = 14;
     const fifteen: i64 = 15;
     const sixteen: i64 = 16;
