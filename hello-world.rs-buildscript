@@ -1,6 +1,6 @@
 # name: Hello-world.rs
 # pack: hello-world.rs-buildscript
-# desc:  🚀Memory safe, blazing fast, configurable, minimal hello world written in rust(🚀) in a few lines of code with few(1039🚀) dependencies🚀 
+# desc:  🦀Memory safe, blazing fast, configurable, minimal hello world written in rust(🦀) in a few lines of code with few(1039🦀) dependencies🦀 
 # deps: rust, cargo, cairo, gtk3, alsa-lib, glfw-x11, freetype2, glib2, pango, atk, gdk-pixbuf2
 # ver: git
 # source: https://github.com/mtvare6/hello-world.rs

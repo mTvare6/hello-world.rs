@@ -26,6 +26,6 @@ fn new(_base_project: Project, licenser: Licenser) -> Self {
         }
 
     fn complies(&self, project: Project) -> ComplianceFuture {
-self.licenser.ask_complies(project) // this is really subjective 🚀️🚀️🚀
+self.licenser.ask_complies(project) // this is really subjective 🦀️🦀️🦀
         }
     }

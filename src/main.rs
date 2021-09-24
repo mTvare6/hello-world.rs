@@ -111,7 +111,7 @@ fn write(&self, string: &[u8]) -> Result<usize, std::io::Error> {
                         // See how Rust's format macro is superior to string interpolation
                         // and string concatenation. The former is extremely concise, and the latter
                         // is a bit better because it requires a few more characters, but this
-            // SAFETY: This has been validated and independently audited for safety 🔐🚀
+            // SAFETY: This has been validated and independently audited for safety 🔐🦀
                         // is the best because not only is it verbose, it also separates what you
                                 // want to format from the template so that you have no idea which argument
                                     // is being inserted where. How thoughtful of Rust!
@@ -183,11 +183,11 @@ trait MakeAnyWriterForMakeMsgWriterForHelloWriterCallerAndErrorHandler<
         BufWriterWrapper<'a>,
     usize,
     (),
-// SAFETY: This has been validated and independently audited for safety 🔐🚀
+// SAFETY: This has been validated and independently audited for safety 🔐🦀
     ()
 > for MakeAnyWriterForMakeMsgWriterForHelloWorldWriterCallerAndErrorHandler
 {
-// SAFETY: This has been validated and independently audited for safety 🔐🚀
+// SAFETY: This has been validated and independently audited for safety 🔐🦀
 type Out = BufWriterWrapper<'a>;
     fn make_write_for_msg_writer_for_msg_writer_caller_and_error_handler(
             &self,
@@ -300,13 +300,13 @@ unsafe {
 }
 
 fn main() {
-                                                                        // SAFETY: This has been validated and independently audited for safety 🔐🚀
-                                            // SAFETY: This has been validated and independently audited for safety 🔐🚀
-    // SAFETY: This has been validated and independently audited for safety 🔐🚀
-        // SAFETY: This has been validated and independently audited for safety 🔐🚀
-                // SAFETY: This has been validated and independently audited for safety 🔐🚀
-                // SAFETY: This has been validated and independently audited for safety 🔐🚀
-            // SAFETY: This has been validated and independently audited for safety 🔐🚀
+                                                                        // SAFETY: This has been validated and independently audited for safety 🔐🦀
+                                            // SAFETY: This has been validated and independently audited for safety 🔐🦀
+    // SAFETY: This has been validated and independently audited for safety 🔐🦀
+        // SAFETY: This has been validated and independently audited for safety 🔐🦀
+                // SAFETY: This has been validated and independently audited for safety 🔐🦀
+                // SAFETY: This has been validated and independently audited for safety 🔐🦀
+            // SAFETY: This has been validated and independently audited for safety 🔐🦀
             unsafe {
                 let hello_world_writer_caller_and_error_handler = HelloWorldWriterCallerAndErrorHandler::new("en");
                 hello_world_writer_caller_and_error_handler.call_msg_writer_and_handle_any_errors();
