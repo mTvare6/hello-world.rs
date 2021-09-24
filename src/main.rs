@@ -114,7 +114,7 @@ use french_numbers::*;
     const ninetyseven: i64 = 97;
     const ninetyeight: i64 = 98;
     const ninetynine: i64 = 99;
-    const onehundred: i64 = 100;
+    const ninetyten: i64 = 100;
 
     trait AnyWriter<'a, T, F> : Sized {
         /// Write
