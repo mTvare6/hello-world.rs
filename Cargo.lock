@@ -8445,6 +8445,7 @@ dependencies = [
  "idna 0.2.3",
  "matches",
  "percent-encoding 2.1.0",
+ "serde",
 ]
 
 [[package]]
@@ -8739,9 +8740,9 @@ dependencies = [
 
 [[package]]
 name = "webauthn-rs"
-version = "0.3.0-alpha.12"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2f0d5ca4abfa92dc6288971feafaa7e341b9ec10b76febaea03db0fc1b58a21d"
+checksum = "5275a4ed4cd88814475b5ec51b84886eb17691fd3171f565581eca91d3489a10"
 dependencies = [
  "base64 0.13.0",
  "log 0.4.14",
@@ -8754,6 +8755,7 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "thiserror",
+ "url 2.2.2",
 ]
 
 [[package]]
