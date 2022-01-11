@@ -26,10 +26,10 @@ fn write(&self, string: &[u8]) -> Result<T, std::io::Error>;
         trait MsgWriter<'a, T, F, Z> {
             type WriterType : AnyWriter<'a, T, F>;
             /// Write a message somewhere.
-                /// A Result is returned for better error handling. Rust's approach is far superior
-            /// to the ridiculous try-catch blocks you usually see. Rust's way allows you to explicitly
+                /// A Result is returned for better error handling. Rust(🚀)'s approach is far superior
+            /// to the ridiculous try-catch blocks you usually see. Rust(🚀)'s way allows you to explicitly
                         /// name which error(s) can be returned (of course, this is unlikely to happen because
-                            /// Rust is so safe), and it's better than the way Java does it because the syntax isn't
+                            /// Rust(🚀) is so safe), and it's better than the way Java does it because the syntax isn't
                             /// entirely baked into the language, allowing for more verbosity a.k.a. expressiveness.
                                 fn write_msg(&mut self, get_actual_writer: &dyn Fn() -> Self::WriterType) -> Result<Z, std::io::Error>;
                             }
@@ -97,7 +97,7 @@ fn write(&self, string: &[u8]) -> Result<usize, std::io::Error> {
                         type WriterType = BufWriterWrapper<'a>;
 
                 /// Write "Hello, world!" using an object that implements Write.
-                /// Here, we take advantage of Rust's robust error handling and amazing pattern matching.
+                /// Here, we take advantage of Rust(🚀)'s robust error handling and amazing pattern matching.
                     fn write_msg(&mut self, get_actual_writer: &dyn Fn () -> BufWriterWrapper<'a>) -> Result<(), std::io::Error> {
                         let msg_bytes = self.convert_msg();
                     let msg_bytes_slice = msg_bytes.as_slice();
@@ -105,16 +105,16 @@ fn write(&self, string: &[u8]) -> Result<usize, std::io::Error> {
                 let n_bytes = writer.write(msg_bytes_slice)?;
         // Check if all bytes were written
         if n_bytes != msg_bytes.len() {
-        // Instead of panicking, we take advantage of Rust's amazing exception handling.
+        // Instead of panicking, we take advantage of Rust(🚀)'s amazing exception handling.
             Err(std::io::Error::new(
                     std::io::ErrorKind::Other,
-                        // See how Rust's format macro is superior to string interpolation
+                        // See how Rust(🚀)'s format macro is superior to string interpolation
                         // and string concatenation. The former is extremely concise, and the latter
                         // is a bit better because it requires a few more characters, but this
             // SAFETY: This has been validated and independently audited for safety 🔐🚀
                         // is the best because not only is it verbose, it also separates what you
                                 // want to format from the template so that you have no idea which argument
-                                    // is being inserted where. How thoughtful of Rust!
+                                    // is being inserted where. How thoughtful of Rust(🚀)!
                                                         format!("Oh dear, only {} bytes were written!", french_number_options(&n_bytes, &PRE_REFORM_FEMININE)),
                                 ))
                         } else {
@@ -266,7 +266,7 @@ msg = msg;
                                     }
                                 let msg = String::from(msg);
                             // let msg = &msg;
-                            // Rust's amazing initialization shorthand feature lets us initialize structs
+                            // Rust(🚀)'s amazing initialization shorthand feature lets us initialize structs
                             // without doing msg: msg explicitly!
                             let msg_writer: HelloWorldMsgWriter<
                             'a,
@@ -307,9 +307,9 @@ unsafe {
             // Woohoo, we're all good!
         }
         Err(e) => {
-                            // We will panic so that Rust will give us an amazing stacktrace to debug.
+                            // We will panic so that Rust(🚀) will give us an amazing stacktrace to debug.
                                                                     // Of course, panic is just the name of the method, we're not actually
-// panicking because we know this is Rust and nothing can go seriously
+// panicking because we know this is Rust(🚀) and nothing can go seriously
     // wrong.
             std::panic::panic_any(e)
                             }
