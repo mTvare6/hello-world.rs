@@ -1360,9 +1360,9 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "3.2.6"
+version = "3.2.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9f1fe12880bae935d142c8702d500c63a4e8634b6c3c57ad72bf978fc7b6249a"
+checksum = "d646c7ade5eb07c4aa20e907a922750df0c448892513714fd3e4acbc7130829f"
 dependencies = [
  "atty",
  "bitflags",
@@ -3565,7 +3565,7 @@ dependencies = [
  "chashmap",
  "chrono",
  "chrono-tz",
- "clap 3.2.6",
+ "clap 3.2.11",
  "cookie 0.15.1",
  "cookie_store",
  "crate",
