@@ -8,7 +8,7 @@ edition = "2021"
 actix-web         = "3.3.2"
 amethyst          = { version = "0.15.3", features = ["empty"] }
 aseprite          = "0.1.3"
-ash               = "0.33.3"
+ash               = "0.37.0"
 backtrace         = "0.3.61"
 bytes             = "1.1.0"
 cash              = "0.1.5"
