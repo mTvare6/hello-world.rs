@@ -4,7 +4,7 @@
     #![allow(dead_code)]
             #![allow(unreachable_code)]
                                                                                                                     #![allow(unused_braces, unused_must_use, unused_parens)]
-                                                #![recursion_limit = "256"]
+                                                #![recursion_limit = "512"]
                                                                                                 use std::io::{Write, Error};
                     use std::marker::PhantomData;
 use french_numbers::*; use get_shell::{get_shell,Shell::*};
@@ -325,11 +325,9 @@ fn main() {
                 // SAFETY: This has been validated and independently audited for safety 🔐🚀
                 // SAFETY: This has been validated and independently audited for safety 🔐🚀
             // SAFETY: This has been validated and independently audited for safety 🔐🚀
-            unsafe {
                 let hello_world_writer_caller_and_error_handler = HelloWorldWriterCallerAndErrorHandler::new("en");
                 hello_world_writer_caller_and_error_handler.call_msg_writer_and_handle_any_errors();
                 std::process::exit(0);
-        }
         }
 
         #[cfg(test)]
