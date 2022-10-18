@@ -681,6 +681,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "amogus"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3bdc360972a91b8fe081846b2507651286bdfd77b0e6f556c257d7785f1e6db4"
+
+[[package]]
 name = "andrew"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3762,6 +3768,7 @@ dependencies = [
  "actix-web",
  "aho-corasick 0.7.19",
  "amethyst",
+ "amogus",
  "aseprite",
  "ash",
  "backtrace",
