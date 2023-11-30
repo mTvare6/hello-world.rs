@@ -755,9 +755,9 @@ dependencies = [
 
 [[package]]
 name = "ash"
-version = "0.33.3+1.2.191"
+version = "0.37.2+1.3.238"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cc4f1d82f164f838ae413296d1131aa6fa79b917d25bebaa7033d25620c09219"
+checksum = "28bf19c1f0a470be5fbf7522a308a05df06610252c5bcf5143e1b23f629a9a03"
 dependencies = [
  "libloading 0.7.3",
 ]
