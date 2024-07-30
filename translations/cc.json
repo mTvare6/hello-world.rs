@@ -1,0 +1,3 @@
+{
+    "msg": "#include <stdio.h>\n\nint main(void) {\n    puts(\"Hello world\");\n    return 0;\n}"
+}
