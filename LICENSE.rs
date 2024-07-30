@@ -2,7 +2,7 @@
 
     #[cfg(test)]
 mod tests {
-                                const ORIGINAL_LICENSE: &str = "Copying and distribution of this file, with or without modification, are permitted in any medium provided you do not contact the author about the file or any problems you are having with the file.";
+                                const ORIGINAL_LICENSE: &str = "Permission is hereby granted to use, copy, and distribute this software (the "Software"), with or without modification, in any medium provided you do not contact the author about the Software or any problems you are having with the Software.";
 
     #[test]
 fn compare_with_parsed() {
