@@ -2224,7 +2224,7 @@ dependencies = [
  "path-clean",
  "path-slash",
  "serde",
- "uuid",
+ "uuid 0.8.2",
 ]
 
 [[package]]
@@ -2258,7 +2258,7 @@ dependencies = [
  "serde_derive",
  "tokio 1.19.2",
  "tokio-util 0.6.10",
- "uuid",
+ "uuid 0.8.2",
 ]
 
 [[package]]
@@ -2294,7 +2294,7 @@ dependencies = [
  "futures",
  "log 0.4.17",
  "serde",
- "uuid",
+ "uuid 0.8.2",
 ]
 
 [[package]]
@@ -2318,7 +2318,7 @@ dependencies = [
  "thread_local",
  "tokio 1.19.2",
  "tokio-util 0.6.10",
- "uuid",
+ "uuid 0.8.2",
 ]
 
 [[package]]
@@ -3651,7 +3651,7 @@ dependencies = [
  "tracing",
  "u2f",
  "url 2.2.2",
- "uuid",
+ "uuid 1.3.1",
  "uwuify",
  "walkdir",
  "webauthn-rs",
@@ -4150,7 +4150,7 @@ checksum = "51f368c9c76dde2282714ae32dc274b79c27527a0c06c816f6dda048904d0d7c"
 dependencies = [
  "chrono",
  "cron",
- "uuid",
+ "uuid 0.8.2",
 ]
 
 [[package]]
@@ -4260,7 +4260,7 @@ dependencies = [
  "serde",
  "smallvec 1.8.1",
  "thiserror",
- "uuid",
+ "uuid 0.8.2",
 ]
 
 [[package]]
@@ -8597,6 +8597,12 @@ dependencies = [
  "getrandom 0.2.7",
  "serde",
 ]
+
+[[package]]
+name = "uuid"
+version = "1.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5b55a3fef2a1e3b3a00ce878640918820d3c51081576ac657d23af9fc7928fdb"
 
 [[package]]
 name = "uwl"
