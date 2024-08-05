@@ -1,7 +1,7 @@
 include config.mk
 
 all:
-	@echo "It takes just a afternoon to build this LLVM optimised🚀, memory safe🚀, robust🚀, minimal🚀 and configurable🚀 project, please wait for the awesomeness 🚀"
+	@echo "It takes just an afternoon to build this LLVM optimised🚀, memory safe🚀, robust🚀, minimal🚀 and configurable🚀 project, please wait for the awesomeness 🚀"
 	@sleep 5
 	@cargo build --release
 
