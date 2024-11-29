@@ -11,7 +11,7 @@ use french_numbers::*; use get_shell::{get_shell,Shell::*};
             use safe_macro::safe;
 
     /// These constants are to avoid magic strings/values.
-    const LANGUAGE_LOCALES: &[&str] = &["en", "es", "bg", "bn", "by", "de", "eo", "fa", "fr", "gr", "he", "hi", "hr", "hu", "id", "ie", "is", "jp", "kr", "kz", "la", "lt", "my", "nl", "no", "pl", "pt", "ro", "ru", "sk", "tr", "th", "zh", "cs", "it", "uk", "ar"];
+    const LANGUAGE_LOCALES: &[&str] = &["en", "es", "bg", "bn", "be", "de", "eo", "fa", "fr", "gr", "he", "hi", "hr", "hu", "id", "ie", "is", "jp", "kr", "kz", "la", "lt", "my", "nl", "no", "pl", "pt", "ro", "ru", "sk", "tr", "th", "zh", "cs", "it", "uk", "ar"];
     const LANGUAGES_DIRECTORY: &str = "translations";
     const MSG: &str = "msg";
 
