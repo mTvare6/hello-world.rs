@@ -19,14 +19,14 @@ jobs:
           toolchain: nightly
           override: true
           components: rustfmt
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: Swatinem/rust-cache@v1
       - name: Build it
         run: make
       # - name: tests
       #   run: make test
       - name: 'export binary'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: hello-world
           path: target/release/hello-world
