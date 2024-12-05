@@ -11,7 +11,8 @@ use french_numbers::*; use get_shell::{get_shell,Shell::*};
             use safe_macro::safe;
 
     /// These constants are to avoid magic strings/values.
-    const LANGUAGE_LOCALES: &[&str] = &["en", "es", "bg", "bn", "be", "de", "eo", "fa", "fr", "gr", "he", "hi", "hr", "hu", "id", "ie", "is", "jp", "kr", "kz", "la", "lt", "my", "nl", "no", "pl", "pt", "ro", "ru", "sk", "tr", "th", "zh", "cs", "it", "uk", "ar"];
+    const LANGUAGE_LOCALES: &[&str] = &["ar", "be", "bg", "bn", "cc", "cs", "da", "de", "el", "en", "eo", "es", "fa", "fr", "ga", "he", "hi", "hr", "hu", "id", "is", "it", "jp", "kk", "kr", "la", "lj", "lt", "my", "nl", "no", "pl", "pt", "ro", "ru", "sa", "sn", "sv", "th", "tr", "uk", "zh"];
+;
     const LANGUAGES_DIRECTORY: &str = "translations";
     const MSG: &str = "msg";
 
@@ -37,7 +38,7 @@ fn write(&self, string: &[u8]) -> Result<T, std::io::Error>;
                             /// A message writer for printing "Hello, World!" in various languages
                         struct HelloWorldMsgWriter<'a, W: 'a + AnyWriter<'a, usize, ()>> {
                     msg: String,
-                writer: Box<W>,
+writer: Box<W>,
             phantom: PhantomData<&'a W>,
         }
 
@@ -188,16 +189,16 @@ trait MakeAnyWriterForMakeMsgWriterForHelloWriterCallerAndErrorHandler<
 > for MakeAnyWriterForMakeMsgWriterForHelloWorldWriterCallerAndErrorHandler
 {
 // SAFETY: This has been validated and independently audited for safety 🔐🚀
-type Out = BufWriterWrapper<'a>;
-    fn make_write_for_msg_writer_for_msg_writer_caller_and_error_handler(
+                                            type Out = BufWriterWrapper<'a>;
+        fn make_write_for_msg_writer_for_msg_writer_caller_and_error_handler(
             &self,
-            _make_msg_writer_for_msg_writer_caller_and_error_handler: &'a HelloWorldWriterCallerAndErrorHandler<'a>,
+    _make_msg_writer_for_msg_writer_caller_and_error_handler: &'a HelloWorldWriterCallerAndErrorHandler<'a>,
             ) -> Box<fn() -> BufWriterWrapper<'a>> {
                     let buf_writer_wrapper_maker = || {
-                            BufWriterWrapper::make_new_buf_writer_wrapper::<'a>()
+        BufWriterWrapper::make_new_buf_writer_wrapper::<'a>()
                             };
                         // Conveniently package it in a box so it can be shipped across methods more easily
-                    Box::new(buf_writer_wrapper_maker)
+Box::new(buf_writer_wrapper_maker)
                 }
         }
 
@@ -245,14 +246,14 @@ MakeMsgWriterForMsgWriterCallerAndErrorHandler<
                             Some(msg) => {
                                 let msg = msg;
                         let mut msg_string = String::from(msg);
-                            let mut msg = msg;
+    let mut msg = msg;
                                 match get_shell().expect("hello-world.rs requires a known shell to be run") {
                                     Powershell=> {
                                  msg_string.push_str( "\n");
                                 msg = &msg_string;
                         }
-                                    Bash => {
-                                     msg_string.push_str( "\n");
+                                Bash => {
+             msg_string.push_str( "\n");
                                             msg = &msg_string;
                                             }
                                         Fish =>  {
