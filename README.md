@@ -82,7 +82,7 @@ Here are my takes on that matter
 
 > **C** in "c language" stands for **C**ringe and **C**VE and **C**ervical **C**apricious **C**atastrophic **C**hthonic **C**lumsy **C**lueless **C**omplex and **C**ryptic 🤮
 
-> **R** in "rust(🚀) systems programming language" stands for **R**ewrite, **R**obust, **R**eliable, **R**ambunctious, **R**eprehensibl[ly great] and **S**ecure🚀
+> **R** in "rust(🚀) systems programming language" stands for **R**ewrite, **R**obust, **R**eliable, **R**ambunctious, **R**eprehensibl[ly great], **S**ecure and **R**yan Gosling (blazing fast d**R**ive**R**)🚀
 
 > [Since hello-world.rs is written in blazingly pure, configurable, lightweight and memory pure rust(🚀) - the CVEs are secure, memory chad and blazing pure](https://github.com/mTvare6/hello-world.rs/issues/) 🚀
 
