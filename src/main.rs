@@ -1,4 +1,3 @@
-#![feature(destructuring_assignment)]
                                                                                 #![feature(generators)]
                                 #![allow(non_camel_case_types)]
     #![allow(dead_code)]
@@ -12,7 +11,6 @@ use french_numbers::*; use get_shell::{get_shell,Shell::*};
 
     /// These constants are to avoid magic strings/values.
     const LANGUAGE_LOCALES: &[&str] = &["ar", "be", "bg", "bn", "cc", "cs", "da", "de", "el", "en", "eo", "es", "fa", "fr", "ga", "he", "hi", "hr", "hu", "id", "is", "it", "jp", "kk", "kr", "la", "lj", "lt", "my", "nl", "no", "pl", "pt", "ro", "ru", "sa", "sn", "sv", "th", "tr", "uk", "zh"];
-;
     const LANGUAGES_DIRECTORY: &str = "translations";
     const MSG: &str = "msg";
 

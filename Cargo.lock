@@ -1686,12 +1686,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "crate"
-version = "0.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ba551890c7c7d0917c71ca40559c42156ffffd703c45558114968cecb83bfd97"
-
-[[package]]
 name = "crc"
 version = "1.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2832,9 +2826,9 @@ checksum = "3dcaa9ae7725d12cdb85b3ad99a434db70b468c09ded17e012d86b5c1010f7a7"
 
 [[package]]
 name = "fuck"
-version = "0.0.0"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "040c97749520259ca4feca5caa11ed69d57fcc3d94adcfbaf916e3617160657a"
+checksum = "73a32a807b0edd51f9c047fdc99f5848fe9e6f275986dcb54b97df06a38a87a1"
 
 [[package]]
 name = "futf"
@@ -3581,7 +3575,6 @@ dependencies = [
  "clap 3.2.6",
  "cookie 0.15.1",
  "cookie_store",
- "crate",
  "crossbeam",
  "crossterm",
  "crypto",
