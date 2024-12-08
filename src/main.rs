@@ -1,9 +1,21 @@
-                                                                                #![feature(generators)]
                                 #![allow(non_camel_case_types)]
     #![allow(dead_code)]
             #![allow(unreachable_code)]
-                                                                                                                    #![allow(unused_braces, unused_must_use, unused_parens)]
+                                                                                                                                #![allow(unused_braces, unused_must_use, unused_parens)]
                                                 #![recursion_limit = "256"]
+
+                                                                        //#![feature(coroutines)]
+//#![feature(coroutines, coroutine_trait, stmt_expr_attributes)]
+                                                #![allow(redundant_semicolons)]
+        #![allow(uncommon_codepoints, confusable_idents)]
+                                                #![allow(unused_imports)]
+                                #![allow(unreachable_patterns)]
+
+
+extern crate core;
+use std::cell::Cell;
+use std::mem::swap;
+use std::ops::Deref;
                                                                                                 use std::io::{Write, Error};
                     use std::marker::PhantomData;
 use french_numbers::*; use get_shell::{get_shell,Shell::*};
@@ -150,9 +162,9 @@ fn write(&self, string: &[u8]) -> Result<usize, std::io::Error> {
 /// No comments needed here because it's self-explanatory.
 trait MakeAnyWriterForMakeMsgWriterForHelloWriterCallerAndErrorHandler<
     'a,
-    MWCEH: MsgWriterCallerAndErrorHandler<'a, MW, T, F, Z>,
-    MW: MsgWriter<'a, T, F, Z>,
-        AW: AnyWriter<'a, T, F> + Sized,
+                                        MWCEH: MsgWriterCallerAndErrorHandler<'a, MW, T, F, Z>,
+                                MW: MsgWriter<'a, T, F, Z>,
+                                                                                                        AW: AnyWriter<'a, T, F> + Sized,
         T,
     F,
     Z
@@ -169,16 +181,16 @@ trait MakeAnyWriterForMakeMsgWriterForHelloWriterCallerAndErrorHandler<
                 struct MakeAnyWriterForMakeMsgWriterForHelloWorldWriterCallerAndErrorHandler;
 
 
-                const MAKE_ANY_WRITER_FOR_MAKE_MSG_WRITER_FOR_HELLO_WORLD_WRITER_CALLER_AND_ERROR_HANDLER:
-                                    MakeAnyWriterForMakeMsgWriterForHelloWorldWriterCallerAndErrorHandler =
-                    MakeAnyWriterForMakeMsgWriterForHelloWorldWriterCallerAndErrorHandler {};
+                                                                const MAKE_ANY_WRITER_FOR_MAKE_MSG_WRITER_FOR_HELLO_WORLD_WRITER_CALLER_AND_ERROR_HANDLER:
+MakeAnyWriterForMakeMsgWriterForHelloWorldWriterCallerAndErrorHandler =
+                                                                                MakeAnyWriterForMakeMsgWriterForHelloWorldWriterCallerAndErrorHandler {};
 
 
                 impl<'a>
                 MakeAnyWriterForMakeMsgWriterForHelloWriterCallerAndErrorHandler<
                     'a,
-                HelloWorldWriterCallerAndErrorHandler<'a>,
-                HelloWorldMsgWriter<'a, BufWriterWrapper<'a>>,
+HelloWorldWriterCallerAndErrorHandler<'a>,
+                                            HelloWorldMsgWriter<'a, BufWriterWrapper<'a>>,
         BufWriterWrapper<'a>,
     usize,
     (),
@@ -232,8 +244,8 @@ MakeMsgWriterForMsgWriterCallerAndErrorHandler<
         let mut r_i18n: r_i18n::I18n = r_i18n::I18n::configure(&config);
         r_i18n.set_current_lang(msg_writer_caller_and_error_handler.language);
             let msg = r_i18n.t(MSG);
-                let make_write =
-                MAKE_ANY_WRITER_FOR_MAKE_MSG_WRITER_FOR_HELLO_WORLD_WRITER_CALLER_AND_ERROR_HANDLER;
+                                                                                                                                    let make_write =
+MAKE_ANY_WRITER_FOR_MAKE_MSG_WRITER_FOR_HELLO_WORLD_WRITER_CALLER_AND_ERROR_HANDLER;
             let writer = make_write
         .make_write_for_msg_writer_for_msg_writer_caller_and_error_handler(
                     msg_writer_caller_and_error_handler,
@@ -352,4 +364,283 @@ fn main() {
                         let content = r_i18n.t("msg"); // efficiently caching i18n result to save function calls!
                 assert_eq!(content, content);
         }
+
+                                                                                                                #[test]
+fn strange() -> bool { let _x: bool = return true; }
+
+                                                                                                                #[test]
+fn funny() {
+    fn f(_x: ()) { }
+    f(return);
+}
+
+                                                                                                                #[test]
+fn what() {
+    fn the(x: &Cell<bool>) {
+        return while !x.get() { x.set(true); };
+    }
+    let i = &Cell::new(false);
+    let dont = {||the(i)};
+    dont();
+    assert!((i.get()));
+}
+
+                                                                                                                #[test]
+fn zombiejesus() {
+    loop {
+        while (return) {
+            if (return) {
+                match (return) {
+                    1 => {
+                        if (return) {
+                            return
+                        } else {
+                            return
+                        }
+                    }
+                    _ => { return }
+                };
+            } else if (return) {
+                return;
+            }
+        }
+        if (return) { break; }
+    }
+}
+
+                                                                                                                #[test]
+fn notsure() {
+    let mut _x: isize;
+    let mut _y = (_x = 0) == (_x = 0);
+    let mut _z = (_x = 0) < (_x = 0);
+    let _a = (_x += 0) == (_x = 0);
+    let _b = swap(&mut _y, &mut _z) == swap(&mut _y, &mut _z);
+}
+
+                                                                                                                #[test]
+fn canttouchthis() -> usize {
+    fn p() -> bool { true }
+    let _a = (assert!((true)) == (assert!(p())));
+    let _c = (assert!((p())) == ());
+    let _b: bool = (println!("{}", 0) == (return 0));
+}
+
+                                                                                                                #[test]
+fn angrydome() {
+    loop { if break { } }
+    let mut i = 0;
+    loop { i += 1; if i == 1 { match (continue) { 1 => { }, _ => panic!("wat") } }
+      break; }
+}
+
+                                                                                                                #[test]
+fn evil_lincoln() { let _evil: () = println!("lincoln"); }
+
+                                                                                                                #[test]
+fn dots() {
+    assert_eq!(String::from(".................................................."),
+               format!("{:?}", .. .. .. .. .. .. .. .. .. .. .. .. ..
+                               .. .. .. .. .. .. .. .. .. .. .. ..));
+}
+
+                                                                                                                #[test]
+fn u8(u8: u8) {
+    if u8 != 0u8 {
+        assert_eq!(8u8, {
+            macro_rules! u8 {
+                (u8) => {
+                    mod u8 {
+                        pub fn u8<'u8: 'u8 + 'u8>(u8: &'u8 u8) -> &'u8 u8 {
+                            "u8";
+                            u8
+                        }
+                    }
+                };
+            }
+
+            u8!(u8);
+            let &u8: &u8 = u8::u8(&8u8);
+            ::u8(0u8);
+            u8
+        });
+    }
+}
+
+                                                                                                                #[test]
+fn fishy() {
+    assert_eq!(String::from("><>"),
+               String::<>::from::<>("><>").chars::<>().rev::<>().collect::<String>());
+}
+
+                                                                                                                #[test]
+fn union() {
+    union union<'union> { union: &'union union<'union>, }
+}
+
+                                                                                                                #[test]
+fn special_characters() {
+    let val = !((|(..):(_,_),(|__@_|__)|__)((&*"\\",'🤔')/**/,{})=={&[..=..][..];})//
+    ;
+    assert!(!val);
+}
+
+                                                                                                                #[test]
+fn punch_card() -> impl std::fmt::Debug {
+    ..=..=.. ..    .. .. .. ..    .. .. .. ..    .. ..=.. ..
+    ..=.. ..=..    .. .. .. ..    .. .. .. ..    ..=..=..=..
+    ..=.. ..=..    ..=.. ..=..    .. ..=..=..    .. ..=.. ..
+    ..=..=.. ..    ..=.. ..=..    ..=.. .. ..    .. ..=.. ..
+    ..=.. ..=..    ..=.. ..=..    .. ..=.. ..    .. ..=.. ..
+    ..=.. ..=..    ..=.. ..=..    .. .. ..=..    .. ..=.. ..
+    ..=.. ..=..    .. ..=..=..    ..=..=.. ..    .. ..=.. ..
+}
+
+                                                                                                                #[test]
+fn r#match() {
+    let val: () = match match match match match () {
+        () => ()
+    } {
+        () => ()
+    } {
+        () => ()
+    } {
+        () => ()
+    } {
+        () => ()
+    };
+    assert_eq!(val, ());
+}
+
+                                                                                                                //#[test]
+//fn i_yield() {
+//    #[coroutine]
+//    static || {
+//        yield yield yield yield yield yield yield yield yield;
+//    };
+//}
+
+                                                                                                                #[test]
+fn match_nested_if() {
+    let val = match () {
+        () if if if if true {true} else {false} {true} else {false} {true} else {false} => true,
+        _ => false,
+    };
+    assert!(val);
+}
+
+                                                                                                                #[test]
+fn monkey_barrel() {
+    let val: () = ()=()=()=()=()=()=()=()=()=()=()=()=()=()=()=()=()=()=()=()=()=()=()=()=();
+    assert_eq!(val, ());
+}
+
+                                                                                                                #[test]
+fn 𝚌𝚘𝚗𝚝𝚒𝚗𝚞𝚎() {
+    type 𝚕𝚘𝚘𝚙 = i32;
+    fn 𝚋𝚛𝚎𝚊𝚔() -> 𝚕𝚘𝚘𝚙 {
+        let 𝚛𝚎𝚝𝚞𝚛𝚗 = 42;
+        return 𝚛𝚎𝚝𝚞𝚛𝚗;
+    }
+    assert_eq!(loop {
+        break 𝚋𝚛𝚎𝚊𝚔 ();
+    }, 42);
+}
+
+                                                                                                                #[test]
+fn function() {
+    struct foo;
+    impl Deref for foo {
+        type Target = fn() -> Self;
+        fn deref(&self) -> &Self::Target {
+            &((|| foo) as _)
+        }
+    }
+    let foo = foo () ()() ()()() ()()()() ()()()()();
+}
+
+                                                                                                                #[test]
+fn bathroom_stall() {
+    let mut i = 1;
+    matches!(2, _|_|_|_|_|_ if (i+=1) != (i+=1));
+    assert_eq!(i, 13);
+}
+
+                                                                                                                #[test]
+fn closure_matching() {
+    let x = |_| Some(1);
+    let (|x| x) = match x(..) {
+        |_| Some(2) => |_| Some(3),
+        |_| _ => unreachable!(),
+    };
+    assert!(matches!(x(..), |_| Some(4)));
+}
+
+                                                                                                                #[test]
+fn semisemisemisemisemi() {
+    ;;;;;;; ;;;;;;; ;;;    ;;; ;;
+    ;;      ;;      ;;;;  ;;;; ;;
+    ;;;;;;; ;;;;;   ;; ;;;; ;; ;;
+         ;; ;;      ;;  ;;  ;; ;;
+    ;;;;;;; ;;;;;;; ;;      ;; ;;
+}
+
+                                                                                                                #[test]
+fn useful_syntax() {
+    use {{std::{{collections::{{HashMap}}}}}};
+    use ::{{{{core}, {std}}}};
+    use {{::{{core as core2}}}};
+}
+
+                                                                                                                #[test]
+fn infcx() {
+    pub mod cx {
+        pub mod cx {
+            pub use super::cx;
+            pub struct Cx;
+        }
+    }
+    let _cx: cx::cx::Cx = cx::cx::cx::cx::cx::Cx;
+}
+
+                                                                                                                #[test]
+fn return_already() -> impl std::fmt::Debug {
+    loop {
+        return !!!!!!!
+        break !!!!!!1111
+    }
+}
+
+                                                                                                                #[test]
+fn fake_macros() -> impl std::fmt::Debug {
+    loop {
+        if! {
+            match! (
+                break! {
+                    return! {
+                        1337
+                    }
+                }
+            )
+
+            {}
+        }
+
+        {}
+    }
+}
+
+                                                                                                                #[test]
+fn fish_fight() {
+    trait Rope {
+        fn _____________<U>(_: Self, _: U) where Self: Sized {}
+    }
+
+    struct T;
+
+    impl Rope for T {}
+
+    fn tug_o_war(_: impl Fn(T, T)) {}
+
+    tug_o_war(<T>::_____________::<T>);
+}
 }

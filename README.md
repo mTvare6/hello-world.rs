@@ -4,7 +4,7 @@
 
 🚀 While this depends on more c code than rust(🚀) code to compile, because rust(🚀) is magically **memory safe**, now all c code is memory safe too 🚀
 
-🚀 This project is very minimal, it only requires **1092** crates 🚀
+🚀 This project is very minimal, it only requires **1247** crates 🚀
 
 ### Building
 
@@ -20,30 +20,31 @@ To compile this project you need only one library 🚀:
 <div>1. atk 🚀</div>
 <div>1. pixbuf 🚀</div>
 <div>1. gdk 🚀</div>
+<div>1. vulkan(moltenVK on mac) 🚀</div>
 </br>
-<div>Just 1 lib as you can see the number list along the names 🚀</div>
+<div>Just a single library 🚀</div>
 </br>
 
 You probably have most of them already, if it says something along the words, you know what to search for now
 
 Then you can just `make` and the compiled executable should be located in `./target/release/hello-world` run it or install it with `make install`.
 
-Due to the lightweightness of rust(🚀), unlike node_modules being fairly large for few dependencies, rust(🚀) manages compile caches efficiently and stores them to storage to save compile times! Just **33G** target folder, the compile time is only around **2 hours and 30 minutes** on my mac on release mode
+Due to the lightweightness of rust(🚀), unlike node_modules being fairly large for few dependencies, rust(🚀) manages compile caches efficiently and stores them to storage to save compile times! Just **37G** target folder on couple of compilation(dev+release), the compile time is only around **2 hours and 30 minutes** on my mac air on release mode
 
-![🚀](/ast/before.png)
+![🚀](/ast/unclean.png)
 
-A clean build makes it take around _3.8G_
+A clean build makes it take around _4.7G_
 
-![🚀](/ast/after.png)
+![🚀](/ast/clean.png)
 
 The CPU usage is pretty minimal too (release mode)
 
-![🚀](/ast/cpu_usage.png)
-![🚀](/ast/cpu_temp.png)
+![🚀](/ast/cpu.png)
 
-![🚀](/ast/lib_benchmark.png)
 
 It is slower than echo but memory safety comes at a cost! We need to be memory chad and blazing pure and lightning based
+
+![🚀](/ast/lib_benchmark.png)
 
 Benchmark by [cypercine](https://github.com/mTvare6/cypercine)
 
