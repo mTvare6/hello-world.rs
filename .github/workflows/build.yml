@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install libgtk-3-dev libgtk-layer-shell-dev libasound2 libasound2-dev
+        run: sudo apt-get update && sudo apt-get install libgtk-3-dev libgtk-layer-shell-dev libasound2t64 libasound2-dev
       - name: Set up
         uses: actions-rs/toolchain@v1
         with:
