@@ -366,9 +366,6 @@ fn main() {
         }
 
                                                                                                                 #[test]
-fn strange() -> bool { let _x: bool = return true; }
-
-                                                                                                                #[test]
 fn funny() {
     fn f(_x: ()) { }
     f(return);
@@ -417,13 +414,6 @@ fn notsure() {
     let _b = swap(&mut _y, &mut _z) == swap(&mut _y, &mut _z);
 }
 
-                                                                                                                #[test]
-fn canttouchthis() -> usize {
-    fn p() -> bool { true }
-    let _a = (assert!((true)) == (assert!(p())));
-    let _c = (assert!((p())) == ());
-    let _b: bool = (println!("{}", 0) == (return 0));
-}
 
                                                                                                                 #[test]
 fn angrydome() {
@@ -443,28 +433,6 @@ fn dots() {
                                .. .. .. .. .. .. .. .. .. .. .. ..));
 }
 
-                                                                                                                #[test]
-fn u8(u8: u8) {
-    if u8 != 0u8 {
-        assert_eq!(8u8, {
-            macro_rules! u8 {
-                (u8) => {
-                    mod u8 {
-                        pub fn u8<'u8: 'u8 + 'u8>(u8: &'u8 u8) -> &'u8 u8 {
-                            "u8";
-                            u8
-                        }
-                    }
-                };
-            }
-
-            u8!(u8);
-            let &u8: &u8 = u8::u8(&8u8);
-            ::u8(0u8);
-            u8
-        });
-    }
-}
 
                                                                                                                 #[test]
 fn fishy() {
@@ -482,17 +450,6 @@ fn special_characters() {
     let val = !((|(..):(_,_),(|__@_|__)|__)((&*"\\",'🤔')/**/,{})=={&[..=..][..];})//
     ;
     assert!(!val);
-}
-
-                                                                                                                #[test]
-fn punch_card() -> impl std::fmt::Debug {
-    ..=..=.. ..    .. .. .. ..    .. .. .. ..    .. ..=.. ..
-    ..=.. ..=..    .. .. .. ..    .. .. .. ..    ..=..=..=..
-    ..=.. ..=..    ..=.. ..=..    .. ..=..=..    .. ..=.. ..
-    ..=..=.. ..    ..=.. ..=..    ..=.. .. ..    .. ..=.. ..
-    ..=.. ..=..    ..=.. ..=..    .. ..=.. ..    .. ..=.. ..
-    ..=.. ..=..    ..=.. ..=..    .. .. ..=..    .. ..=.. ..
-    ..=.. ..=..    .. ..=..=..    ..=..=.. ..    .. ..=.. ..
 }
 
                                                                                                                 #[test]
@@ -603,14 +560,17 @@ fn infcx() {
 }
 
                                                                                                                 #[test]
-fn return_already() -> impl std::fmt::Debug {
-    loop {
-        return !!!!!!!
-        break !!!!!!1111
-    }
-}
+                                    fn magik(){
 
-                                                                                                                #[test]
+fn punch_card() -> impl std::fmt::Debug {
+    ..=..=.. ..    .. .. .. ..    .. .. .. ..    .. ..=.. ..
+    ..=.. ..=..    .. .. .. ..    .. .. .. ..    ..=..=..=..
+    ..=.. ..=..    ..=.. ..=..    .. ..=..=..    .. ..=.. ..
+    ..=..=.. ..    ..=.. ..=..    ..=.. .. ..    .. ..=.. ..
+    ..=.. ..=..    ..=.. ..=..    .. ..=.. ..    .. ..=.. ..
+    ..=.. ..=..    ..=.. ..=..    .. .. ..=..    .. ..=.. ..
+    ..=.. ..=..    .. ..=..=..    ..=..=.. ..    .. ..=.. ..
+}
 fn fake_macros() -> impl std::fmt::Debug {
     loop {
         if! {
@@ -628,6 +588,23 @@ fn fake_macros() -> impl std::fmt::Debug {
         {}
     }
 }
+
+fn return_already() -> impl std::fmt::Debug {
+    loop {
+        return !!!!!!!
+        break !!!!!!1111
+    }
+}
+
+fn strange() -> bool { let _x: bool = return true; }
+
+fn canttouchthis() -> usize {
+    fn p() -> bool { true }
+    let _a = (assert!((true)) == (assert!(p())));
+    let _c = (assert!((p())) == ());
+    let _b: bool = (println!("{}", 0) == (return 0));
+}
+                                    }
 
                                                                                                                 #[test]
 fn fish_fight() {
