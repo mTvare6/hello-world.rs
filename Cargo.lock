@@ -3327,12 +3327,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3dcaa9ae7725d12cdb85b3ad99a434db70b468c09ded17e012d86b5c1010f7a7"
 
 [[package]]
-name = "fuck"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "73a32a807b0edd51f9c047fdc99f5848fe9e6f275986dcb54b97df06a38a87a1"
-
-[[package]]
 name = "futf"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4169,7 +4163,6 @@ dependencies = [
  "fern",
  "fluent-bundle 0.15.2",
  "french-numbers",
- "fuck",
  "futures",
  "get-shell",
  "gfx",
