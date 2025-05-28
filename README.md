@@ -2,13 +2,13 @@
 
 🚀 Memory safe, blazing fast, minimal and configurable hello world project written in the rust(🚀) programming language 🚀
 
-🚀 While this depends on more c code than rust(🚀) code to compile, because rust(🚀) is magically **memory safe**, now all c code is memory safe too 🚀
+🚀 While this depends on more c code than rust(🚀) code to compile, because rust(🚀) is magically **memory safe** 🚀, now all c code is memory safe too 🚀
 
 🚀 This project is very minimal, it only requires **1247** crates 🚀
 
 ### Building
 
-To compile this project you need only one library 🚀:
+To compile this project you need only 🚀 one 🚀 library 🚀:
 
 <div>1. <a href="https://www.cairographics.org/download/">cairo development libraries</a> 🚀.</div>
 <div>1. <a href="https://www.gtk.org/docs/installations/">libgtk development libraries</a> 🚀.</div>
@@ -20,57 +20,57 @@ To compile this project you need only one library 🚀:
 <div>1. atk 🚀</div>
 <div>1. pixbuf 🚀</div>
 <div>1. gdk 🚀</div>
-<div>1. vulkan(moltenVK on mac) 🚀</div>
+<div>1. vulkan(moltenVK 🚀 on mac) 🚀</div>
 </br>
-<div>Just a single library 🚀</div>
+<div>🚀 Just a single library 🚀</div>
 </br>
 
-You probably have most of them already, if it says something along the words, you know what to search for now
+You probably have most of them already, if it says something along the words, you know what to search for now 🚀
 
-Then you can just `make` and the compiled executable should be located in `./target/release/hello-world` run it or install it with `make install`.
+Then you can just `make` 🚀 and the compiled executable should be located in `./target/release/hello-world` 🚀 run it or install it with `make install` 🚀.
 
-Due to the lightweightness of rust(🚀), unlike node_modules being fairly large for few dependencies, rust(🚀) manages compile caches efficiently and stores them to storage to save compile times! Just **37G** target folder on couple of compilation(dev+release), the compile time is only around **2 hours and 30 minutes** on my mac air on release mode
+Due to the lightweightness of rust(🚀), unlike node_modules being fairly large for few dependencies, rust(🚀) manages compile caches efficiently and stores them to storage to save compile times! Just **37G** target folder on couple of compilation(dev+release), the compile time is only around **2 hours and 30 minutes** on my mac air on release mode 🚀
 
 ![🚀](/ast/unclean.png)
 
-A clean build makes it take around _4.7G_
+A clean build makes it take around _4.7G_ 🚀
 
 ![🚀](/ast/clean.png)
 
-The CPU usage is pretty minimal too (release mode)
+The CPU usage is pretty minimal too (release mode) 🚀
 
 ![🚀](/ast/cpu.png)
 
 
-It is slower than echo but memory safety comes at a cost! We need to be memory chad and blazing pure and lightning based
+It is slower than echo but memory safety 🚀 comes at a cost! We need to be memory chad and blazing pure and lightning based🚀
 
 ![🚀](/ast/lib_benchmark.png)
 
 Benchmark by [cypercine](https://github.com/mTvare6/cypercine)
 
-### Installation
+### Installation 🚀
 
-#### Arch Linux
+#### Arch Linux 🚀
 
 ```sh
 $ makepkg -si
 $ pacman -U <package>.pkg.tar.xz
 ```
 
-#### Docker
+#### Docker 🚀
 
 ```sh
 $ docker build -t hello-world .
 $ docker run -it --rm --name hwrs hello-world
 ```
 
-#### Nix
+#### Nix 🚀
 
 ```sh
 $ nix-env -i -f default.nix
 ```
 
-#### Shade
+#### Shade 🚀
 
 ```sh
 $ wget "https://raw.githubusercontent.com/mTvare6/hello-world.rs/master/hello-world.rs-buildscript" -O <prefix>/user/main/hello-world.rs
@@ -90,7 +90,7 @@ Here are my takes on that matter
 
 Here are the comments from few of my fellow Rustaceans 🚀
 
-> People ask the question "what's rust(🚀) good for?" pretty frequently, and little terminal apps like this are precisely the reason. [...]. It enables a kind of workflow that simply didn't exist before: I could have a fully safe, "correct", LLVM-optimized binary installed on my desktop in an afternoon.🚀
+> People ask the question "what's rust(🚀) good for?" pretty frequently, and little terminal apps like this are precisely the reason. [...]. It enables a kind of workflow that simply didn't exist before: I could have a fully safe, "correct", LLVM-optimized 🚀 binary installed on my desktop in an afternoon.🚀
 
 > Modern rust(🚀) appears pretty similar to modern JavaScript. You declare your variables with let🚀
 
@@ -130,4 +130,4 @@ Here are the comments from few of my fellow Rustaceans 🚀
 
 > As a rust(🚀) developer, I have no idea how any of my code or computers actually works, but its cool to ask people in discord.gg/rust(🚀) for all help and write code🚀
 
-I've recently added source to where I've got these quotes from, when I get time I will add sources to where there messages are from, for now some sources aren't marked
+I've recently added source to where I've got these quotes from, when I get time I will add sources to where there messages are from, for now some sources aren't marked 🚀
